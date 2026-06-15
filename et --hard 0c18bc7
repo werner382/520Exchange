@@ -1,0 +1,29 @@
+[33mcommit ec4101e789a6dd91df3ee29c8de6fa46fab3e588[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: TECH <TECH@DESKTOP-VQT5KTH>
+Date:   Mon Jun 15 10:51:20 2026 -0600
+
+    Restaurando interactividad funcional con 520Exchange
+
+[33mcommit f3d9300ea914d8cb54ccf1bec937f19c05e6a93a[m
+Author: TECH <TECH@DESKTOP-VQT5KTH>
+Date:   Mon Jun 15 01:16:25 2026 -0600
+
+    Reemplazo de referencias de Crypto Pulse por 520Exchange
+
+[33mcommit b6276a3c06a173def97fa23380d55fa88389056c[m
+Author: TECH <TECH@DESKTOP-VQT5KTH>
+Date:   Sun Jun 14 23:59:25 2026 -0600
+
+    Actualización de títulos a minúsculas
+
+[33mcommit 0c18bc7d6fa45ad1db898b30e0c0f9cb54b53e5e[m[33m ([m[1;31morigin/prueba-idioma[m[33m, [m[1;31morigin/prueba-0c18bc7[m[33m, [m[1;31morigin/original-estable[m[33m, [m[1;32mprueba-idioma[m[33m, [m[1;32mprueba-0c18bc7[m[33m, [m[1;32moriginal-estable[m[33m)[m
+Author: TECH <TECH@DESKTOP-VQT5KTH>
+Date:   Sun Apr 5 23:57:26 2026 -0600
+
+    “Agregando selector de idioma en index.html”)
+
+[33mcommit 33e706b51d8b7a4bc9f6b02544f0118039f81b0f[m[33m ([m[1;31morigin/prueba-original[m[33m)[m
+Author: TECH <TECH@DESKTOP-VQT5KTH>
+Date:   Sun Apr 5 20:03:41 2026 -0600
+
+    Agregando index.html y archivos del sitio completo

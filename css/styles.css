@@ -1191,3 +1191,33 @@ body {
 .close:hover {
   color: #fff;
 }
+/* Sección Support Us */
+.support-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.support-section .section-title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .support-section .section-title {
+    font-size: 1.6rem;
+  }
+
+  .news-card {
+    margin-bottom: 25px;
+  }
+}

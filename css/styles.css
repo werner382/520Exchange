@@ -1114,12 +1114,3 @@ body {
         text-align: center;
     }
 }
-.btn-custom {
-  font-size: 1.25rem;
-  transition: all 0.3s ease;
-}
-
-.btn-custom:hover {
-  background-color: #ffca2c;
-  transform: scale(1.05);
-}

@@ -283,3 +283,27 @@
 
 </body>
 </html>
+<!-- Modal -->
+<div id="qrModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="qrImage" src="" alt="QR Enlarged" style="max-width:400px;">
+    <p id="walletAddress"></p>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.news-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('.news-image').src;
+    const address = card.querySelector('.text-muted strong').innerText;
+    document.getElementById('qrImage').src = img;
+    document.getElementById('walletAddress').innerText = "Wallet: " + address;
+    document.getElementById('qrModal').style.display = "block";
+  });
+});
+
+document.querySelector('.close').onclick = function() {
+  document.getElementById('qrModal').style.display = "none";
+};
+</script>

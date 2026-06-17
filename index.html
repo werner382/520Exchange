@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a0e17' stroke='%2300d4aa' stroke-width='4'/><text x='50' y='65' text-anchor='middle' font-size='40' fill='%2300d4aa'>₿</text></svg>">
 </head>
-    <!-- Crypto Ticker Horizontal -->
+    <body>
+<!-- Crypto Ticker Horizontal -->
 <div id="crypto-ticker" class="ticker-bar">
   <div class="ticker-content" id="ticker-content">
     <span>BTC: <strong id="btc-price"></strong> USD</span>
@@ -24,8 +25,6 @@
     <span>XRP: <strong id="xrp-price"></strong> USD</span>
   </div>
 </div>
-
-<body>
     <header class="header">
         <div class="header-content">
             <div class="logo">
@@ -355,3 +354,38 @@ document.querySelector('.close').onclick = function() {
   document.getElementById('qrModal').style.display = "none";
 };
 </script>
+<script>
+document.querySelectorAll('.news-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('.news-image').src;
+    const address = card.querySelector('.text-muted strong').innerText;
+    document.getElementById('qrImage').src = img;
+    document.getElementById('walletAddress').innerText = "Wallet: " + address;
+    document.getElementById('qrModal').style.display = "block";
+  });
+});
+
+document.querySelector('.close').onclick = function() {
+  document.getElementById('qrModal').style.display = "none";
+};
+</script>
+
+<!-- 🔥 Ticker de criptomonedas en tiempo real -->
+<script>
+async function loadTicker() {
+  const res = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin,cardano,dogecoin,ripple&vs_currencies=usd");
+  const data = await res.json();
+  document.getElementById("btc-price").textContent = data.bitcoin.usd;
+  document.getElementById("eth-price").textContent = data.ethereum.usd;
+  document.getElementById("sol-price").textContent = data.solana.usd;
+  document.getElementById("bnb-price").textContent = data.binancecoin.usd;
+  document.getElementById("ada-price").textContent = data.cardano.usd;
+  document.getElementById("doge-price").textContent = data.dogecoin.usd;
+  document.getElementById("xrp-price").textContent = data.ripple.usd;
+}
+loadTicker();
+setInterval(loadTicker, 60000);
+</script>
+
+</body>
+</html>

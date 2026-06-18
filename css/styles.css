@@ -83,6 +83,39 @@ body {
     justify-content: space-between;
     gap: 32px;
 }
+.milestone {
+  background-color: #111;        /* Fondo oscuro */
+  border: 2px solid #00ffcc;     /* Borde verde turquesa */
+  border-radius: 8px;            /* Esquinas redondeadas */
+  padding: 20px;                 /* Espaciado interno */
+  margin: 30px auto;             /* Separación con otras secciones */
+  max-width: 600px;              /* Ancho máximo */
+  text-align: center;            /* Centrado del texto */
+  box-shadow: 0 0 15px rgba(0,255,204,0.3); /* Sombra suave */
+}
+
+.milestone h3 {
+  color: #00ffcc;                /* Título en verde turquesa */
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.milestone p {
+  color: #ddd;                   /* Texto gris claro */
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+.milestone .text-light {
+  color: #bbb;                   /* Texto más tenue */
+  font-style: italic;
+}
+
+.milestone .text-success {
+  color: #00ffcc;                /* Mensaje motivador en verde turquesa */
+  font-weight: bold;
+  margin-top: 12px;
+}
 
 .logo {
     display: flex;

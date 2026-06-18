@@ -83,39 +83,48 @@ body {
     justify-content: space-between;
     gap: 32px;
 }
+/* ===== Bloque conmemorativo Bitcoin Pizza Day ===== */
 .milestone {
-  background-color: #111;        /* Fondo oscuro */
-  border: 2px solid #00ffcc;     /* Borde verde turquesa */
-  border-radius: 8px;            /* Esquinas redondeadas */
-  padding: 20px;                 /* Espaciado interno */
-  margin: 30px auto;             /* Separación con otras secciones */
-  max-width: 600px;              /* Ancho máximo */
-  text-align: center;            /* Centrado del texto */
-  box-shadow: 0 0 15px rgba(0,255,204,0.3); /* Sombra suave */
+  background-color: #111;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,255,204,0.3);
+  animation: glow 3s infinite alternate;
 }
 
 .milestone h3 {
-  color: #00ffcc;                /* Título en verde turquesa */
+  color: #00ffcc;
   font-size: 1.8em;
   margin-bottom: 10px;
 }
 
 .milestone p {
-  color: #ddd;                   /* Texto gris claro */
+  color: #ddd;
   font-size: 1.1em;
   margin: 8px 0;
 }
 
 .milestone .text-light {
-  color: #bbb;                   /* Texto más tenue */
+  color: #bbb;
   font-style: italic;
 }
 
 .milestone .text-success {
-  color: #00ffcc;                /* Mensaje motivador en verde turquesa */
+  color: #00ffcc;
   font-weight: bold;
   margin-top: 12px;
 }
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(0,255,204,0.2); }
+  to   { box-shadow: 0 0 25px rgba(0,255,204,0.6); }
+}
+
+
 
 .logo {
     display: flex;

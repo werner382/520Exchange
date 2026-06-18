@@ -386,6 +386,47 @@ async function loadTicker() {
 loadTicker();
 setInterval(loadTicker, 60000);
 </script>
+<!-- 🔥 Ticker de criptomonedas en tiempo real -->
+<script>
+  async function loadTicker() {
+    const res = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin,cardano,dogecoin,ripple&vs_currencies=usd");
+    const data = await res.json();
+    document.getElementById("btc-price").textContent = data.bitcoin.usd;
+    document.getElementById("eth-price").textContent = data.ethereum.usd;
+    document.getElementById("sol-price").textContent = data.solana.usd;
+    document.getElementById("bnb-price").textContent = data.binancecoin.usd;
+    document.getElementById("ada-price").textContent = data.cardano.usd;
+    document.getElementById("doge-price").textContent = data.dogecoin.usd;
+    document.getElementById("xrp-price").textContent = data.ripple.usd;
+  }
+  loadTicker();
+  setInterval(loadTicker, 60000);
+</script>
+
+<!-- 🍕 Bitcoin Pizza Day -->
+<section class="milestone">
+  <h3>🍕 Bitcoin Pizza Day</h3>
+  <p>El 22 de mayo de 2010, 10 000 BTC compraron dos pizzas. 
+     Hoy celebramos el primer pago real con Bitcoin.</p>
+  <p id="pizza-counter" class="text-light"></p>
+  <p class="text-success">Cada gran historia empieza con un pequeño gesto. 
+     Tu contribución hoy puede ser el próximo hito.</p>
+</section>
+
+<script>
+  function daysSincePizzaDay() {
+    const pizzaDay = new Date("2010-05-22");
+    const today = new Date();
+    const diffTime = today - pizzaDay;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById("pizza-counter").textContent =
+      "Han pasado " + diffDays + " días desde la primera compra con Bitcoin.";
+  }
+  daysSincePizzaDay();
+</script>
+
+</body>
+</html>
 
 </body>
 </html>

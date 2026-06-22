@@ -11,6 +11,37 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a0e17' stroke='%2300d4aa' stroke-width='4'/><text x='50' y='65' text-anchor='middle' font-size='40' fill='%2300d4aa'>₿</text></svg>">
+<style>
+  :root {
+    --color-principal: #00E0B8;   /* Verde turquesa */
+    --color-secundario: #1E90FF;  /* Azul eléctrico */
+    --color-acento: #FFD700;      /* Dorado */
+    --color-fondo-claro: #F5F5F5;
+    --color-fondo-oscuro: #111111;
+  }
+
+  body {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-fondo-claro);
+    font-family: 'IBM Plex Sans', 'Space Grotesk', sans-serif;
+  }
+
+  .logo {
+    color: var(--color-principal);
+  }
+
+  a:hover {
+    color: var(--color-secundario);
+  }
+
+  .marco-evento {
+    border: 2px solid var(--color-acento);
+    box-shadow: 0 0 10px rgba(255,215,0,0.5);
+    border-radius: 8px;
+    padding: 20px;
+  }
+</style>
+
 </head>
     <body>
 <!-- Crypto Ticker Horizontal -->
